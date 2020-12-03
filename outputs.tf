@@ -14,8 +14,3 @@ output "default" {
   value       = join("", digitalocean_vpc.default.*.default)
   description = " A boolean indicating whether or not the VPC is the default one for the region."
 }
-
-output "created_at" {
-  value       = join("", digitalocean_vpc.default.*.created_at)
-  description = "The date and time of when the VPC was created."
-}
